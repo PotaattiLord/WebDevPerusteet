@@ -21,8 +21,17 @@ main {
     flex: 1 1 45%;
     margin-bottom: 20px;
 }
-.cat-card img, .cat-image {
-    width: 40%;
+.cat-card {
+    width: 50%;
+    color: #fff;
     height: auto;
     margin: 10px;
+    padding: 10px;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+}
+.cat-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
