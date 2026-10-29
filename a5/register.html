@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröidy - Kissa-sivut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Kissani</h1>
+        <nav>
+            <a href="index.html">Etusivu</a>
+            <a href="gallery.html">Galleria</a>
+            <a href="register.html">Rekisteröidy</a>
+        </nav>
+    </header>
+    <main>
+        
+        <h1>Rekisteröidy</h1>
+        <p>Rekisteröidy kissojeni sivulle!</p>
+        <form class="register-form" method="post" action="https://httpbin.org/post">
+            <div class="form-group">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Käyttäjänimi:</label>
+                <input type="text" id="username" name="username" minlength="3" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Salasana:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="account-type">Tilin tyyppi:</label>
+                <select id="account-type" name="account-type" required>
+                    <option value="">Valitse...</option>
+                    <option value="basic">Perus</option>
+                    <option value="premium">Premium</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                Hyväksyn käyttöehdot
+            </label>
+
+            <button type="submit">Rekisteröidy</button>
+        </form>
+    </main>
+</body>
+</html>
